@@ -64,8 +64,8 @@ const Countdown = () => {
     return `/images/${letterFormatted}-01.png`;
   };
 
-  const line1 = " You are cordially invited to celebrate ".split("");
-  const line2 = " Angel's Birthday party ".split("");
+  const line1 = " YOU ARE CORDIALLY INVITED TO CELEBRATE ".split("");
+  const line2 = " ANGEL'S BIRTHDAY PARTY ".split("");
 
   const renderTitleAsImages = () => (
     <div className="flex flex-col justify-center items-center mb-5">
