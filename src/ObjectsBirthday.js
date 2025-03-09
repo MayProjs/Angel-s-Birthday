@@ -16,7 +16,7 @@ const ObjectsOfBirthday = () => {
     if (showFullCake) {
       // Optional: delay the transition to show a final popup or animation
       const timer = setTimeout(() => {
-        navigate("/credits"); 
+        navigate("/credits");
       }, 2000); // 2-second delay, adjust as desired
 
       return () => clearTimeout(timer);
@@ -234,7 +234,7 @@ const ObjectsOfBirthday = () => {
       },
     },
     {
-      src: "images/BlueBerry.png", //blueberry
+      src: "images/Blueberry.png", //blueberry
       alt: "Object 18",
       style: {
         top: "2vh",
@@ -558,22 +558,23 @@ const ObjectsOfBirthday = () => {
         </div>
       ))}
 
-      {showFullCake 
-      // && (
-      //   <div className="cake-popup">
-      //     {/* <img
-      //       src="images/cake.png"
-      //       alt="Full Cake"
-      //       className="fullcake"
-      //     /> */}
-      //     {/* <p>Congratulations! You collected all cake pieces! 🎂</p> */}
+      {
+        showFullCake
+        // && (
+        //   <div className="cake-popup">
+        //     {/* <img
+        //       src="images/cake.png"
+        //       alt="Full Cake"
+        //       className="fullcake"
+        //     /> */}
+        //     {/* <p>Congratulations! You collected all cake pieces! 🎂</p> */}
 
-      //     {/*  Here the page will transfer to BooksandCredits Page logic*/}
-      //       <div className="cake-popup">
-      //     {/* <h2>Congratulations! Redirecting to Books & Credits...</h2> */}
-      //   </div>
-      //   </div>
-      // )
+        //     {/*  Here the page will transfer to BooksandCredits Page logic*/}
+        //       <div className="cake-popup">
+        //     {/* <h2>Congratulations! Redirecting to Books & Credits...</h2> */}
+        //   </div>
+        //   </div>
+        // )
       }
     </div>
   );
