@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./EndCredits.css";
+import club from "./club.mp3";
 
 const EndCredits = () => {
   const [crazyMode, setCrazyMode] = useState(false);
@@ -9,7 +10,7 @@ const EndCredits = () => {
   useEffect(() => {
     const audioEl = audioRef.current;
     const handleEnded = () => {
-      audioEl.play().catch(err => console.error("Play failed:", err));
+      audioEl.play().catch((err) => console.error("Play failed:", err));
     };
     audioEl.addEventListener("ended", handleEnded);
     return () => {
@@ -22,7 +23,9 @@ const EndCredits = () => {
     setCrazyMode(newMode);
 
     if (newMode) {
-      audioRef.current.play().catch(err => console.error("Audio play failed:", err));
+      audioRef.current
+        .play()
+        .catch((err) => console.error("Audio play failed:", err));
     } else {
       audioRef.current.pause();
     }
@@ -48,7 +51,8 @@ const EndCredits = () => {
       </header>
 
       {/* Audio element with loop */}
-      <audio ref={audioRef} src="sounds/ClubClassics.mp3" loop />
+      {/* <audio ref={audioRef} src="sounds/ClubClassics.mp3" loop /> */}
+      <audio ref={audioRef} src={club} loop />
 
       <main className="main-content">
         <img

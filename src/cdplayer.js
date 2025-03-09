@@ -1,4 +1,10 @@
-import React, { useState, useRef, useEffect, forwardRef, useImperativeHandle } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  forwardRef,
+  useImperativeHandle,
+} from "react";
 import logo from "./logo.svg";
 import casette from "./Casette.png";
 import cd from "./CD.png";
@@ -14,7 +20,7 @@ const Cdplayer = forwardRef(({ pageActive }, ref) => {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
       setIsActive(false);
-    }
+    },
   }));
 
   // Loop playback effect remains as-is
@@ -57,14 +63,19 @@ const Cdplayer = forwardRef(({ pageActive }, ref) => {
 
   return (
     <div className="cardcas">
-      <img onClick={handleClick} className="casette" src={casette} alt="Casette" />
+      <img
+        onClick={handleClick}
+        className="casette"
+        src={casette}
+        alt="Casette"
+      />
       <img
         className={isActive ? "App-logo" : "cd"}
         src={cd}
         style={{ cursor: "pointer" }}
         alt="CD"
       />
-      <img className="hand" src="images/hand.png" alt="Hand" />
+      <img className="hand" src="images/Hand.png" alt="Hand" />
     </div>
   );
 });

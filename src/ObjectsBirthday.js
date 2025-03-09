@@ -175,7 +175,7 @@ const ObjectsOfBirthday = () => {
       },
     },
     {
-      src: "images/OrangeStarfish.png",
+      src: "images/OrangeStarFish.png",
       alt: "Object 13",
       style: {
         top: "66vh",
@@ -234,7 +234,7 @@ const ObjectsOfBirthday = () => {
       },
     },
     {
-      src: "images/blueberry.png", //blueberry
+      src: "images/BlueBerry.png", //blueberry
       alt: "Object 18",
       style: {
         top: "2vh",
