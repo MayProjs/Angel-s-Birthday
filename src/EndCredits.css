@@ -1,0 +1,112 @@
+/* Body reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+  }
+  
+  /* Page container with bright yellow background */
+  .page-container {
+    background-color: #aeff00; /* bright yellow */
+    min-height: 100vh;
+    width: 100vw;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    transition: background 0.3s;
+  }
+  
+  /* If "crazy mode" is on, shake or change color (example) */
+  .page-container.crazy {
+    background-color: #f0f;
+    animation: crazy-bg 2s infinite alternate ease-in-out;
+  }
+  
+  @keyframes crazy-bg {
+    0% {
+      background-color: #f0f;
+    }
+    50% {
+      background-color: #0ff;
+    }
+    100% {
+      background-color: #f0f;
+    }
+  }
+  
+  /* Top navigation */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .nav-links span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .toggles {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .toggle span {
+    margin-right: 0.5rem;
+  }
+  
+  .agency-info {
+    font-size: 0.9rem;
+  }
+  
+  /* Main content */
+  .main-content {
+    text-align: center;
+    margin-top: -2vh;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .cake-image {
+    max-width: 40vw;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  /* Fast pop-up animation when crazy mode is on */
+  @keyframes fastPopup {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .fast-pop {
+    animation: fastPopup 0.5s infinite;
+  }
+  
+  /* Footer / credits */
+  .credits-section {
+    background-color: #aeff00;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .project-info p {
+    margin: 0rem 0;
+    font-size: none !important;
+    
+  }
+  

@@ -1,0 +1,15 @@
+body,html {
+  /* height: 100vh; */
+  margin: 0;
+  background-color: #282c34;
+  display: flex;
+  justify-content:center; /*Aligns content to the right*/
+   align-items: center; /* Centers vertically */
+  /* padding-right: 5rem;  */
+  /* Adjust this to control right spacing */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "Pixel Countdown";
+  src: url("/public/fonts/pixel-countdown.ttf") format("truetype");
+}
+
+.App {
+  text-align: center;
+}
+
+.casette {
+  position: fixed;
+  right: 5%;
+  top: 17%;
+  z-index: 2;
+}
+
+.cd {
+  width: 31rem;
+  position: fixed;
+  right: 4%;
+  top: 17%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.App-logo {
+  width: 31rem;
+  position: fixed;
+  right: 4%;
+  top: 17%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card {
+  width: 18rem; /* Adjust as needed */
+  background: white;
+  margin-top: 60%;
+  margin-right: 75%;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  padding: 2rem;
+  position: relative;
+}
+
+.card_image {
+  /* display: block;
+  margin: 1rem auto; Centers it horizontally */
+  width: 28rem;
+  height: 28rem;
+  background-color: blanchedalmond;
+  border-radius: 50%; /* Ensures a circular shape */
+  object-fit: cover; /* Prevents image distortion */
+  margin-top: -8rem;
+  margin-left: -7rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  /* width:; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.countdown {
+  /* justify-content: center; */
+  /* background-color: #f1e750; */
+  background-color: #f2d45c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: right; /* Center vertically */
+  /* background-color: white; */
+  text-align: right;
+  padding-right: 2%;
+
+  font-family: "Pixel Countdown", sans-serif;
+  font-size: 30px; /* Adjust size as needed */
+  color: black; /* Change color if needed */
+}
+
+.sideWaiter {
+  position: fixed;
+  left: 0;
+  /* top: 12%; */
+  top: 82px;
+}
+
+.timer {
+  padding-right: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: -35px;
+  /* color: #3993B8; */
+  color: black;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.angel1 {
+  width: 150px;
+  height: 360px;
+  position: fixed;
+  top: 210px;
+  left: 170px;
+  animation: tilt 5s infinite ease-in-out;
+}
+
+.birthdayPage {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #002582; */
+
+  /* #ADD8E6 , 61dafb . #87CEEB , #B0E0E6 , #D6EAF8 */
+  /* Favs 37a4db, #0038c7 002582 aeff00 */
+}
+
+.background {
+  position: relative;
+  background-color: #002582; /* Blue color */
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('texture01.jpg');
+  background-size: cover;
+  opacity: 0.15; /* Adjust visibility */
+  pointer-events: none; /* Ensures clicks go through */
+}
+
+.hand{
+  position: fixed;
+  right: 13vw;
+  top: 13vh;
+  z-index: 10;
+  width: 22vw;
+  height: 28vh;
+}
+
+.paper1{
+  position: fixed;
+  width: 102vw;
+  left: -1vw;
+  /* height: 60vh; */
+  top: -13vh;
+  /* width: 100vw;
+  height: auto; */
+  /* z-index: 0; */
+  transform: rotate(5deg);
+}
+
+.paper2{
+  position: fixed;
+  width: 116vw;
+  bottom: -16vh;
+  transform: rotate(8deg);
+
+}
+
+.cake1{
+  position: fixed;
+  z-index: 5;
+  top: 65%;
+  left: 53%;
+  width: 17vw;
+}
+
+.cake2{
+  position: fixed;
+  z-index: 5;
+  width: 15vw;
+  top: 0vh;
+  right: 20vw;
+}
+
+.cake3{
+  position: fixed;
+  z-index: 5;
+  width: 12vw;
+  top: 6vh;
+  left: 38vw;
+  transform: rotate(-12deg);
+}
+
+/* .blue-cake {
+  position: fixed;
+  z-index: 0;
+  width: 20vw;
+  top: 20vh;
+  left: -5vw;
+  transform: rotate(-12deg);
+} */
+
+.blue-pie1 {
+  position: fixed;
+  z-index: 5;
+  width: 13vw;
+  top: 14vh;
+  right: 4vw;
+  transform: rotate(5deg);
+}
+
+.blue-pie2 {
+  position: fixed;
+  z-index: 5;
+  width: 14vw;
+  top: -4vh;
+  left: 50vw;
+  transform: rotate(-12deg);
+}
+
+.blue-pie3 {
+  position: fixed;
+  z-index: 5;
+  width: 6vw;
+  top: 62vh;
+  right: 4vw;
+  transform: rotate(deg);
+}
+
+.choco-cake {
+  position: fixed;
+  z-index: 5;
+  width: 8vw;
+  top: 6vh;
+  left: 24vw;
+  transform: rotate(28deg);
+}
+
+.croissant {
+  position: fixed;
+  z-index: 5;
+  width: 10vw;
+  top: 50vh;
+  left: 35vw;
+  transform: rotate(-12deg);
+}
+
+.raspberry-pie {
+  position: fixed;
+  z-index: 5;
+  width: 12vw;
+  top: 62vh;
+  left: 22vw;
+  transform: rotate(-20deg);
+}
+
+.red-cake {
+  position: fixed;
+  z-index: 5;
+  width: 12vw;
+  top: 51vh;
+  right: 14vw;
+  transform: rotate(18deg);
+}
+
+.strawberry-pie {
+  position: fixed;
+  z-index: 5;
+  width: 12vw;
+  top: 70vh;
+  left: 38vw;
+  transform: rotate(-12deg);
+}
+
+.cake5 {
+  position: fixed;
+  z-index: 5;
+  width: 5vw;
+  top: 46vh;
+  left: 25vw;
+  transform: rotate(deg);
+}

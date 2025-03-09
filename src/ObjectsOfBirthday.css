@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #002147;
+}
+
+.container {
+  position: relative;
+  /* border: 1px solid black; */
+  /* width: 150vw;
+  height: 100vh; */
+  /* overflow: hidden; */
+}
+
+.hover-container {
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  /* border: 1px solid black; */
+  pointer-events: auto;
+}
+
+.parent-element {
+  overflow: visible;
+}
+
+.hover-image {
+  width: auto;
+  height: auto;
+  /* max-width: 150px;
+  max-height: 150px; */
+  object-fit: contain;
+  /* border: 5px solid black; */
+  pointer-events: auto;
+}
+
+.hovered {
+  transform: scale(1.2);
+}
+
+/* Ensures no part goes out of bounds */
+.hover-container:hover {
+  transform: scale(1.2);
+}
+
+/* Apply individual rotations to elements */
+.tilted-1 {
+  transform: rotate(-10deg);
+}
+.tilted-2 {
+  transform: rotate(15deg);
+}
+.tilted-3 {
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+  .hover-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+.gingerCat {
+  width: auto;
+  height: auto;
+  max-width: 50px !important;
+  max-height: 50px !important;
+}
+
+/* .transparent-image {
+    pointer-events: none;
+} */
+
+/* .hover-image {
+    clip-path: circle(50%);  Example: Adjust as needed
+} */
+
+.staticimage {
+  /* border: 3px solid black; */
+}
+
+.pieces {
+  width: 5vw;
+  height: 10vh;
+  /* top: 100vh; */
+  top: 80%;
+  left: 20%;
+  position: fixed;
+  z-index: 9999; /* Increased */
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-popup {
+  animation: popup 0.5s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  /* background: white; */
+  /* padding: 10px; */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Increased */
+}
+
+.fullcake {
+  z-index: -1;
+}
