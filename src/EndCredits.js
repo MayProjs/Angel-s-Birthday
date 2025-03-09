@@ -48,7 +48,7 @@ const EndCredits = () => {
       </header>
 
       {/* Audio element with loop */}
-      <audio ref={audioRef} src="/sounds/ClubClassics.mp3" loop />
+      <audio ref={audioRef} src="sounds/ClubClassics.mp3" loop />
 
       <main className="main-content">
         <img
