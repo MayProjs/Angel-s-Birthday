@@ -280,10 +280,10 @@
 .raspberry-pie {
   position: fixed;
   z-index: 5;
-  width: 12vw;
-  top: 62vh;
-  left: 22vw;
-  transform: rotate(-20deg);
+  width: 18vw;
+  top: 60vh;
+  left: 17vw;
+  transform: rotate(-25deg);
 }
 
 .red-cake {
