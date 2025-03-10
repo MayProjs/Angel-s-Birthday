@@ -18,11 +18,11 @@ import quasant from "./images/quassant.png";
 import rasbpie from "./images/rasberrypie.png";
 import redcake from "./images/redcake.png";
 import strawberrypie from "./images/strawberrypie.png";
-import cake5 from './images/cake.png';
+import cake5 from "./images/cake.png";
 
 const Countdown = () => {
   const navigate = useNavigate();
-  const targetDate = new Date("2025-03-10T23:11:11+05:30").getTime(); // IST time
+  const targetDate = new Date("2025-03-10T21:00:00+05:30").getTime(); // IST time
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -94,27 +94,25 @@ const Countdown = () => {
 
   const sideImages = () => (
     <>
-    <img className="cake1" src= {cake1}/>
-    <img className="cake2" src = {cake2}/>
-    <img className="cake3" src = {cake3} />
-    <img className="paper1" src = {paper} />
-    <img className="paper2" src = {paper2} />
-    
-    {/* <img className="blue-cake" src={bluecake1} /> */}
-<img className="blue-pie1" src={bluecake2} />
-<img className="blue-pie2" src={bluecake3} />
-<img className="blue-pie3" src={bluecake4} />
-<img className="choco-cake" src={chocake} />
-<img className="croissant" src={quasant} />
-<img className="raspberry-pie" src={rasbpie} />
-<img className="red-cake" src={redcake} />
-<img className="strawberry-pie" src={strawberrypie} />
-<img className="cake5" src={cake5} />
+      <img className="cake1" src={cake1} />
+      <img className="cake2" src={cake2} />
+      <img className="cake3" src={cake3} />
+      <img className="paper1" src={paper} />
+      <img className="paper2" src={paper2} />
 
+      {/* <img className="blue-cake" src={bluecake1} /> */}
+      <img className="blue-pie1" src={bluecake2} />
+      <img className="blue-pie2" src={bluecake3} />
+      <img className="blue-pie3" src={bluecake4} />
+      <img className="choco-cake" src={chocake} />
+      <img className="croissant" src={quasant} />
+      <img className="raspberry-pie" src={rasbpie} />
+      <img className="red-cake" src={redcake} />
+      <img className="strawberry-pie" src={strawberrypie} />
+      <img className="cake5" src={cake5} />
 
       <img className="sideWaiter" src={waiter} />
       <img className="angel1" src={angel1} />
-      
     </>
   );
   return (
