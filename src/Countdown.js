@@ -22,7 +22,7 @@ import cake5 from './images/cake.png';
 
 const Countdown = () => {
   const navigate = useNavigate();
-  const targetDate = new Date("2025-03-10T11:11:11+05:30").getTime(); // IST time
+  const targetDate = new Date("2025-03-10T23:11:11+05:30").getTime(); // IST time
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
